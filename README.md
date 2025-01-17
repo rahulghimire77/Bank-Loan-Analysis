@@ -11,12 +11,8 @@ This project demonstrates a machine learning pipeline for predicting the **grade
 ## Table of Contents
 
 - [Data](#data)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Setup and Usage](#setup-and-usage)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Results](#results)
-- [License](#license)
 
 ---
 
@@ -64,5 +60,21 @@ Each classifier is fit on the training set, and predictions are made on the test
 
 By comparing accuracy and other metrics (precision, recall, F1-score) across these models, we identify the best-performing classifier. The confusion matrix of the tuned best model (often XGBoost or Random Forest) provides deeper insights into predictions versus actual outcomes.
 
+## Results
+
+After training and tuning each of the models (Random Forest, Gradient Boosting, Logistic Regression, SVC, XGBoost, and KNN), you can compare their performance using various metrics.
+
+- **Accuracy Scores**: 
+  - For each model, compute `accuracy_score(y_test, y_pred)` to get the percentage of correct predictions.
+- **Classification Reports**: 
+  - Use `classification_report(y_test, y_pred)` to evaluate precision, recall, and F1-score for each class.
+- **Confusion Matrix**: 
+  - Visualize the confusion matrix with `seaborn.heatmap` to understand the distribution of predictions vs. actual classes. This helps identify which classes are often misclassified.
+
+Below is an example of the output you might see for a tuned XGBoost model:
+
+Best XGB Accuracy: 0.85
+
+...
 
 
