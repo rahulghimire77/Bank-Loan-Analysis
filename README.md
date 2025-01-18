@@ -1,4 +1,4 @@
-# Loan Default Prediction (Datathon Project)
+# Loan Default Prediction
 
 This project demonstrates a machine learning pipeline for predicting the **grade** of a loan (which can be an indicator of loan default risk) using various classification algorithms. It includes:
 
